@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="w-100 row m-0 pd-2 pd-sm-5 display-center">
+    <div class="col-12 col-md-10 main-game">
+      <div class="main-game__container">
+        <div class="main-game__header primary-bg">
+          <div class="main-game__images-container one">
+            <img *ngIf="!isDarkTheme" src="../../../../../assets/images/public/question.svg" class="question-img"
+              data-bs-toggle="modal" data-bs-target="#instructionsModal" />
+            <img *ngIf="isDarkTheme" src="../../../../../assets/images/public/question-dark.svg" class="question-img"
+              data-bs-toggle="modal" data-bs-target="#instructionsModal" />
+
+            <img data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right"
+              (click)="changeLanguage()" src="../../../../../assets/images/public/language2.png" class="leng-img" />
+
+          </div>
+
+          <div class="main-game__title-container two">
+            <h4 class="main-game__title">{{'home.title' | translate}}</h4>
+          </div>
+
+          <div class="main-game__images-container three">
+            <img *ngIf="!isDarkTheme" src="../../../../../assets/images/public/chart.svg" class="chart-img"
+              data-bs-toggle="modal" data-bs-target="#statisticsModal" />
+            <img *ngIf="isDarkTheme" src="../../../../../assets/images/public/chart-dark.svg" class="chart-img"
+              data-bs-toggle="modal" data-bs-target="#statisticsModal" />
+            <img *ngIf="!isDarkTheme" (click)="toggle()" src="../../../../../assets/images/public/switch-light.svg"
+              class="switch-img" />
+            <img *ngIf="isDarkTheme" (click)="toggle()" src="../../../../../assets/images/public/switch-dark.svg"
+              class="switch-img" />
+          </div>
+        </div>
+        <app-input-grid [selectedWord]="selectedWord"></app-input-grid>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="instructionsModal" tabindex="-1" focus aria-labelledby="instructionsModal"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="instructions">
+          <h4 class="instructions__title">{{'instructions.title' | translate}}</h4>
+
+          <p class="instructions__label">{{'instructions.label1' | translate}}</p>
+          <p class="instructions__label">{{'instructions.label2' | translate}}.</p>
+          <p class="instructions__label">{{'instructions.label3' | translate}}</p>
+
+
+          <div class="instructions-example">
+            <p class="instructions__label">{{'instructions.exampleTitle' | translate}}</p>
+
+            <div class="example-img__container">
+              <img src="../../../../../assets/images/public/example1.svg" class="example-img" />
+            </div>
+            <p class="instructions__label">{{'instructions.label4' | translate}}</p>
+
+            <div class="example-img__container">
+              <img src="../../../../../assets/images/public/example2.svg" class="example-img" />
+            </div>
+            <p class="instructions__label">{{'instructions.label5' | translate}}
+            </p>
+
+            <div class="example-img__container">
+              <img src="../../../../../assets/images/public/example3.svg" class="example-img" />
+            </div>
+            <p class="instructions__label">{{'instructions.label6' | translate}}</p>
+
+            <p class="instructions__label">{{'instructions.label7' | translate}}</p>
+            <p class="display-center instructions__label mt-4">{{'instructions.label8' | translate}}</p>
+
+            <div class="display-center mt-5">
+              <button class="btn instructions__btn-action display-center"
+                data-bs-dismiss="modal">{{'instructions.buttonAction' | translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="statisticsModal" tabindex="-1" focus aria-labelledby="statisticsModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="statistics">
+          <h4 class="statistics__title">{{'statistics.title' | translate}}</h4>
+
+          <div class="statistics__results-main-container">
+            <div class="statistics__results-container">
+              <p class="statistics__label statistics__result">{{totalGames}}</p>
+              <p class="statistics__label">{{'statistics.played' | translate}}</p>
+            </div>
+
+            <div class="statistics__results-container">
+              <p class="statistics__label statistics__result">{{gamesWon}}</p>
+              <p class="statistics__label">{{'statistics.wons' | translate}}</p>
+            </div>
+          </div>
+
+
+          <div class="statistics__timer-container">
+            <p class="statistics__label">{{'statistics.next' | translate}}</p>
+            <p class="statistics__label statistics__timer" id="timer">04:10</p>
+          </div>
+
+          <div class="display-center mt-5">
+            <button class="btn instructions__btn-action display-center"
+              data-bs-dismiss="modal">{{'statistics.buttonAction' | translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

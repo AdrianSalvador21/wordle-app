@@ -1,0 +1,205 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.app-theme-container {
+  transition: background-color 0.5s;
+  background-color: var(--secondary-bg);
+  min-height: 100vh;
+}
+
+.primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.primary-color {
+  transition: color 0.5s;
+  color: var(--primary-color);
+}
+
+.primary-button-action {
+  padding: 11px 57px;
+  font-size: 16px;
+  border-radius: 7px;
+  background-color: transparent;
+  border: 1px solid #1796db;
+  color: #1796db;
+  margin-top: 5px;
+}
+
+.nightish-bg {
+  background-color: #1e222e;
+}
+
+.white-bg {
+  background-color: #fafafa;
+}
+
+.white-color {
+  color: white;
+}
+
+.show-for-mobile {
+  display: none;
+}
+
+.mr-2 {
+  margin-right: 6px;
+}
+
+.mr-3 {
+  margin-right: 11px;
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.btn-close-dialog {
+  position: absolute;
+  color: var(--primary-color);
+}
+
+.dialog-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+.mat-bottom-sheet-container {
+  background-color: var(--third-bg);
+  min-height: 28rem;
+  padding: 0 !important;
+}
+
+.custom-link:focus,
+.custom-link:active {
+  outline: none !important;
+}
+
+.locations-container {
+  .mat-expansion-panel-header-title {
+    max-width: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  .mat-expansion-panel-header {
+    height: 66px;
+    color: var(--primary-color);
+  }
+}
+
+.mat-expansion-panel-header-description {
+  p {
+    color: var(--primary-color);
+  }
+}
+
+.mat-expansion-indicator::after {
+  color: var(--primary-color);
+}
+
+.mat-form-field-label {
+  color: var(--primary-color);
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline::before {
+  background-color: var(--primary-color);
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: var(--primary-color);
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: var(--primary-color);
+}
+
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled="true"]),
+.mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled="true"]),
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background-color: var(--secondary-bg);
+}
+
+input.mat-input-element {
+  color: var(--primary-color);
+}
+
+.mat-expansion-panel-content {
+  background-color: var(--secondary-bg);
+}
+
+.mat-expansion-panel-header.mat-expanded:focus,
+.mat-expansion-panel-header.mat-expanded:hover {
+  background: var(--secondary-bg) !important;
+}
+
+.mat-expansion-panel-header:not([aria-disabled="true"]) {
+  background-color: var(--third-bg);
+}
+
+@media only screen and (max-width: 530px) {
+  .show-for-mobile {
+    display: block;
+  }
+
+  .locations-container .mat-expansion-panel-header-title {
+    max-width: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 65%;
+    margin-top: 16px;
+  }
+
+  .locations-container .mat-expansion-panel-header-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 65%;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 531px) {
+  .mt-sm-8 {
+    margin-top: 8rem !important;
+  }
+
+  .mt-sm-10 {
+    margin-top: 10rem !important;
+  }
+}
+
+.mat-icon {
+  font-family: "Material Icons" !important;
+}

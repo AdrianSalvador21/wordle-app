@@ -1,0 +1,28 @@
+<div class="main-game__inputs">
+  <div class="group main-game__inputs-container">
+    <div *ngFor="let inputRow of [1,1,1,1,1]; let idx = index">
+      <div class="main-game__inputs-row text-center" #row>
+        <input
+          [ngClass]="{'done': processValid(0, idx), 'warning': processWarning(0, idx), 'invalid': processInvalid(0, idx)}"
+          class="main-game__input" (keyup)="processInput($event, 1, idx)" inputmode="numeric" autocomplete="off"
+          required maxlength="1" attr.id="code1-{{idx}}" [readonly]="!isSelected(1, idx)">
+        <input
+          [ngClass]="{'done': processValid(1, idx), 'warning': processWarning(1, idx), 'invalid': processInvalid(1, idx)}"
+          class="main-game__input" (keyup)="processInput($event, 2, idx)" inputmode="numeric" autocomplete="off"
+          required maxlength="1" attr.id="code2-{{idx}}" [readonly]="!isSelected(2, idx)">
+        <input
+          [ngClass]="{'done': processValid(2, idx), 'warning': processWarning(2, idx), 'invalid': processInvalid(2, idx)}"
+          class="main-game__input" (keyup)="processInput($event, 3, idx)" inputmode="numeric" autocomplete="off"
+          required maxlength="1" attr.id="code3-{{idx}}" [readonly]="!isSelected(3, idx)">
+        <input
+          [ngClass]="{'done': processValid(3, idx), 'warning': processWarning(3, idx), 'invalid': processInvalid(3, idx)}"
+          class="main-game__input" (keyup)="processInput($event, 4, idx)" inputmode="numeric" autocomplete="off"
+          required maxlength="1" attr.id="code4-{{idx}}" [readonly]="!isSelected(4, idx)">
+        <input
+          [ngClass]="{'done': processValid(4, idx), 'warning': processWarning(4, idx), 'invalid': processInvalid(4, idx)}"
+          class="main-game__input" (keyup)="processInput($event, 5, idx)" inputmode="numeric" autocomplete="off"
+          required maxlength="1" attr.id="code5-{{idx}}" [readonly]="!isSelected(5, idx)">
+      </div>
+    </div>
+  </div>
+</div>
