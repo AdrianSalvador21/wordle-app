@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "snack": "Language changed"
+  },
+  "instructions": {
+    "title": "How to play?",
+    "label1": "Guess the hidden word in five tries.",
+    "label2": "Each guess must be a valid 5-letter word.",
+    "label3": "After each attempt the color of the letters changes to show how close you are to getting the word right.",
+    "label4": "The letter G is in the word and in the correct position.",
+    "label5": "The letter C is in the word but in the wrong position.",
+    "label6": "The letter O is not in the word.",
+    "label7": "There may be repeated letters. The clues are independent for each letter.",
+    "label8": "A new word every 5 minutes!",
+    "exampleTitle": "Examples",
+    "buttonAction": "Play!"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "played": "Played",
+    "wons": "Victories",
+    "next": "Next word",
+    "buttonAction": "Accept" 
+  }
+}

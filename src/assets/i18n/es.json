@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "snack": "Idioma cambiado"
+  },
+  "instructions": {
+    "title": "Cómo jugar",
+    "label1": "Adivina la palabra oculta en cinco intentos.",
+    "label2": "Cada intento debe ser una palabra válida de 5 letras.",
+    "label3": "Después de cada intento el color de las letras cambia para mostrar qué tan cerca estás de acertar la palabra.",
+    "label4": "La letra G está en la palabra y en la posición correcta.",
+    "label5": "La letra C está en la palabra pero en la posición incorrecta.",
+    "label6": "La letra O no está en la palabra.",
+    "label7": "Puede haber letras repetidas. Las pistas son independientes para cada letra.",
+    "label8": "¡Una palabra nueva cada 5 minutos!",
+    "exampleTitle": "Ejemplos",
+    "buttonAction": "¡Jugar!"
+  },
+  "statistics": {
+    "title": "Estadísticas",
+    "played": "Jugadas",
+    "wons": "Víctorias",
+    "next": "Siguiente palabra",
+    "buttonAction": "Aceptar" 
+  }
+}
